@@ -1,0 +1,100 @@
+@charset "UTF-8" ;
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none;color: inherit;}
+body{background: #fff;color: #333;font-size: 14px;font-family:'TAEBAEKmilkyway';}
+
+#wrap{
+    width: 100%;
+    height: calc(400px + 200px + 250px + 120px);
+    background-color: #d4d4d4;
+    position: relative;
+}
+/* ------------------------------ left ------------------------------ */
+.left{
+    width: 200px;
+    height: 870px;
+    background-color: rgb(191, 240, 94);
+    float: left;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+.logo img{
+
+}
+.nav{
+    /* border: 1px solid red; */
+    width: 180px;
+    margin: 0 auto;
+
+}
+.main{}
+.main > li{
+    position: relative;
+}
+.main > li >a{
+    text-align: center;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(122, 186, 122);
+}
+.main > li:hover >a{
+    background-color: rgb(159, 199, 100);
+    color: white;
+}
+
+.sub{
+    position: absolute;
+    left: 190px;
+    top: 0;
+    width: 1730px;
+    background-color: rgb(157, 190, 107);
+    z-index: 200;
+    color: white;
+
+}
+.sub > li{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+.sub > li >a{
+    display: block;
+    text-align: center;
+    width: 150px;
+    padding: 0 20px;
+    font-size: 15px;
+}
+.sub > li >a:hover{
+    background-color: darkgreen;
+}
+
+/* ------------------------------ right ------------------------------ */
+.right{
+    width: calc(100% - 200px);
+    float: right;
+    height: 870px;
+    background-color: rgb(245, 245, 215);
+}
+
+/* ------------------------------ footer ------------------------------ */
+.footer{
+    width: 100%;
+    height: 120px;
+    clear: both;
+    background-color: yellowgreen;
+}
